@@ -10,7 +10,7 @@ struct RegisterView: View {
             
             WelcomeMessageView()
             TextField("Type your name...", text: $name)
-                .textFieldStyle(KuchiTextStyle())
+                .modifier(BorderedViewModifier())
             Spacer()
           }.padding()
         }.background(WelcomeBackgroundImage())
