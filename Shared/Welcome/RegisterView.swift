@@ -10,7 +10,7 @@ struct RegisterView: View {
             
             WelcomeMessageView()
             TextField("Type your name...", text: $name)
-                .modifier(BorderedViewModifier())
+                .bordered()
             Spacer()
           }.padding()
         }.background(WelcomeBackgroundImage())

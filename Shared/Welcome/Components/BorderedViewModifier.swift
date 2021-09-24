@@ -16,3 +16,11 @@ struct BorderedViewModifier: ViewModifier {
     }
     
 }
+
+extension View {
+  func bordered() -> some View {
+    ModifiedContent(
+      content: self,
+      modifier: BorderedViewModifier()
+    )
+} }
