@@ -26,6 +26,7 @@
 		EFE43BFA26FE493D007456B0 /* WelcomeBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BF926FE493D007456B0 /* WelcomeBackgroundImage.swift */; };
 		EFE43BFE26FE4A20007456B0 /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BFD26FE4A20007456B0 /* LogoImage.swift */; };
 		EFE43C0226FE4A44007456B0 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43C0126FE4A44007456B0 /* WelcomeMessageView.swift */; };
+		EFE43C0626FE4BBD007456B0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43C0526FE4BBD007456B0 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		EFE43BF926FE493D007456B0 /* WelcomeBackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackgroundImage.swift; sourceTree = "<group>"; };
 		EFE43BFD26FE4A20007456B0 /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
 		EFE43C0126FE4A44007456B0 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
+		EFE43C0526FE4BBD007456B0 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +73,10 @@
 		57578F9024E9D943003465A4 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				EFE43BE426FE4628007456B0 /* HorizontallyAlignedLabelStyle.swift */,
+				EFE43C0526FE4BBD007456B0 /* RegisterView.swift */,
 				EFD071A726F6112000D071AA /* WelcomeView.swift */,
 				57578F9224E9D943003465A4 /* Components */,
-				EFE43BE426FE4628007456B0 /* HorizontallyAlignedLabelStyle.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				EFE43BF526FE4857007456B0 /* Profile.swift in Sources */,
 				EFE43BFA26FE493D007456B0 /* WelcomeBackgroundImage.swift in Sources */,
 				EFE43BE526FE4628007456B0 /* HorizontallyAlignedLabelStyle.swift in Sources */,
+				EFE43C0626FE4BBD007456B0 /* RegisterView.swift in Sources */,
 				57578FDE24E9D943003465A4 /* HomeView.swift in Sources */,
 				EFE43BED26FE484A007456B0 /* KeyboardFollower.swift in Sources */,
 			);

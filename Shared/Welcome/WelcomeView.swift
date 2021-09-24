@@ -4,11 +4,7 @@ struct WelcomeView: View {
     var body: some View {
         ZStack {
             WelcomeBackgroundImage()
-            Label {
-                LogoImage()
-            } icon: {
-               WelcomeMessageView()
-            }.labelStyle(HorizontallyAlignedLabelStyle()) // Label
+            WelcomeMessageView()
         } // Zstack
         
     }
