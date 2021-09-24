@@ -23,6 +23,9 @@
 		EFE43BF426FE4857007456B0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BF126FE4857007456B0 /* UserManager.swift */; };
 		EFE43BF526FE4857007456B0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BF226FE4857007456B0 /* Profile.swift */; };
 		EFE43BF626FE4857007456B0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BF326FE4857007456B0 /* Settings.swift */; };
+		EFE43BFA26FE493D007456B0 /* WelcomeBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BF926FE493D007456B0 /* WelcomeBackgroundImage.swift */; };
+		EFE43BFE26FE4A20007456B0 /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BFD26FE4A20007456B0 /* LogoImage.swift */; };
+		EFE43C0226FE4A44007456B0 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43C0126FE4A44007456B0 /* WelcomeMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		EFE43BF126FE4857007456B0 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		EFE43BF226FE4857007456B0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		EFE43BF326FE4857007456B0 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EFE43BF926FE493D007456B0 /* WelcomeBackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackgroundImage.swift; sourceTree = "<group>"; };
+		EFE43BFD26FE4A20007456B0 /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
+		EFE43C0126FE4A44007456B0 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 		57578F9224E9D943003465A4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EFE43BF926FE493D007456B0 /* WelcomeBackgroundImage.swift */,
+				EFE43BFD26FE4A20007456B0 /* LogoImage.swift */,
+				EFE43C0126FE4A44007456B0 /* WelcomeMessageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -267,9 +276,12 @@
 			files = (
 				EFE43BF426FE4857007456B0 /* UserManager.swift in Sources */,
 				57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */,
+				EFE43BFE26FE4A20007456B0 /* LogoImage.swift in Sources */,
 				EFE43BF626FE4857007456B0 /* Settings.swift in Sources */,
 				EFD071A826F6112000D071AA /* WelcomeView.swift in Sources */,
+				EFE43C0226FE4A44007456B0 /* WelcomeMessageView.swift in Sources */,
 				EFE43BF526FE4857007456B0 /* Profile.swift in Sources */,
+				EFE43BFA26FE493D007456B0 /* WelcomeBackgroundImage.swift in Sources */,
 				EFE43BE526FE4628007456B0 /* HorizontallyAlignedLabelStyle.swift in Sources */,
 				57578FDE24E9D943003465A4 /* HomeView.swift in Sources */,
 				EFE43BED26FE484A007456B0 /* KeyboardFollower.swift in Sources */,
