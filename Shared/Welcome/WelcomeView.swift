@@ -11,32 +11,30 @@ struct WelcomeView: View {
                 .blur(radius: 5)
                 .opacity(0.08)
             
-            HStack {
-                Image(systemName: "table")
-                  .resizable()
-                  .frame(width: 60, height: 60, alignment: .center)
-                  .border(Color.gray, width: 1)
-                  .cornerRadius(60 / 2)
-                  .background(Color(white: 0.9))
-                  .clipShape(Circle())
-                    .foregroundColor(.red)
-                
-                VStack {
+            Label { // 1
+                VStack(alignment: .leading) {
                     Text("Welcome to")
-                      .font(.headline)
-                      .bold()
-                    
+                        .font(.headline)
+                        .bold()
                     Text("Kuchi")
                         .font(.largeTitle)
-                      .bold()
-                }
-                .foregroundColor(.red)
-                .lineLimit(2)
-                .multilineTextAlignment(.leading)
-                .padding(.horizontal)
-
-            }
-        }
+                        .bold() }
+                    .foregroundColor(.red)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
+                    .padding(.horizontal)
+                // 2
+            } icon: {
+                // 3
+                Image(systemName: "table")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                    .background(Color(white: 0.9))
+                    .clipShape(Circle())
+                    .foregroundColor(.red)
+            }.labelStyle(HorizontallyAlignedLabelStyle()) // Label
+        } // Zstack
         
     }
 }
