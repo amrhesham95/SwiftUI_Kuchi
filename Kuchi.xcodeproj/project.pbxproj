@@ -19,6 +19,10 @@
 		57EF341424E89F92004ABEB2 /* KuchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF340024E89F91004ABEB2 /* KuchiApp.swift */; };
 		EFD071A826F6112000D071AA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD071A726F6112000D071AA /* WelcomeView.swift */; };
 		EFE43BE526FE4628007456B0 /* HorizontallyAlignedLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BE426FE4628007456B0 /* HorizontallyAlignedLabelStyle.swift */; };
+		EFE43BED26FE484A007456B0 /* KeyboardFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BEC26FE484A007456B0 /* KeyboardFollower.swift */; };
+		EFE43BF426FE4857007456B0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BF126FE4857007456B0 /* UserManager.swift */; };
+		EFE43BF526FE4857007456B0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BF226FE4857007456B0 /* Profile.swift */; };
+		EFE43BF626FE4857007456B0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43BF326FE4857007456B0 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		57EF341224E89F92004ABEB2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		EFD071A726F6112000D071AA /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		EFE43BE426FE4628007456B0 /* HorizontallyAlignedLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontallyAlignedLabelStyle.swift; sourceTree = "<group>"; };
+		EFE43BEC26FE484A007456B0 /* KeyboardFollower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardFollower.swift; sourceTree = "<group>"; };
+		EFE43BF126FE4857007456B0 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		EFE43BF226FE4857007456B0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		EFE43BF326FE4857007456B0 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 		57B3CA712536560300888D62 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EFE43BEC26FE484A007456B0 /* KeyboardFollower.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -111,6 +120,7 @@
 			children = (
 				57578FA724E9D943003465A4 /* HomeView.swift */,
 				57EF340024E89F91004ABEB2 /* KuchiApp.swift */,
+				EFE43BF026FE4857007456B0 /* Profile */,
 				57578FA924E9D943003465A4 /* Resources */,
 				57578F9024E9D943003465A4 /* Welcome */,
 			);
@@ -142,6 +152,16 @@
 				57EF341224E89F92004ABEB2 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		EFE43BF026FE4857007456B0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EFE43BF126FE4857007456B0 /* UserManager.swift */,
+				EFE43BF226FE4857007456B0 /* Profile.swift */,
+				EFE43BF326FE4857007456B0 /* Settings.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE43BF426FE4857007456B0 /* UserManager.swift in Sources */,
 				57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */,
+				EFE43BF626FE4857007456B0 /* Settings.swift in Sources */,
 				EFD071A826F6112000D071AA /* WelcomeView.swift in Sources */,
+				EFE43BF526FE4857007456B0 /* Profile.swift in Sources */,
 				EFE43BE526FE4628007456B0 /* HorizontallyAlignedLabelStyle.swift in Sources */,
 				57578FDE24E9D943003465A4 /* HomeView.swift in Sources */,
+				EFE43BED26FE484A007456B0 /* KeyboardFollower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
