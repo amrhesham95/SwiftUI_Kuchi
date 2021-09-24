@@ -2,7 +2,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @State var name: String = ""
-    
+    @ObservedObject var keyboardHandler: KeyboardFollower
     var body: some View {
         ZStack {
           VStack {
@@ -13,12 +13,16 @@ struct RegisterView: View {
                 .bordered()
             Spacer()
           }.padding()
-        }.background(WelcomeBackgroundImage())
+          .padding(.bottom, keyboardHandler.keyboardHeight)
+          .edgesIgnoringSafeArea(
+            keyboardHandler.isVisible ? .bottom : [])
+          .background(WelcomeBackgroundImage())
+        }
     }
 }
 
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterView()
+        RegisterView(keyboardHandler: KeyboardFollower())
     }
 }
