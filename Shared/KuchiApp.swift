@@ -34,9 +34,15 @@ import SwiftUI
 
 @main
 struct KuchiApp: App {
+    let user = UserManager()
+    
+    init() {
+        user.load()
+    }
   var body: some Scene {
     WindowGroup {
         RegisterView(keyboardHandler: KeyboardFollower())
+            .environmentObject(user)
     }
   }
 }
