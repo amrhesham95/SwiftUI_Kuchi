@@ -24,6 +24,7 @@ struct RegisterView: View {
                 }
             })
             .bordered()
+            .disabled(!userManager.isUserNameValid())
             
             Spacer()
           }.padding()
