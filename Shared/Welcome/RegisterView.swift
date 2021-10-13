@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State var name: String = ""
     @EnvironmentObject var userManager: UserManager
     @ObservedObject var keyboardHandler: KeyboardFollower
     var body: some View {
@@ -10,8 +9,21 @@ struct RegisterView: View {
             Spacer()
             
             WelcomeMessageView()
+            
+            
             TextField("Type your name...", text: $userManager.profile.name)
                 .bordered()
+            
+            HStack {
+                Spacer()
+                Text("Name length: \(userManager.profile.name.count)")
+                    .font(.caption)
+                    .foregroundColor(
+                      userManager.isUserNameValid() ? .green : .red)
+                    .padding(.trailing)
+                
+            }
+            
             Button(action: registerUser, label: {
                 HStack {
                     Image(systemName: "checkmark")
