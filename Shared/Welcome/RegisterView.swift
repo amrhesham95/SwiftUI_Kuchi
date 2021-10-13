@@ -13,8 +13,18 @@ struct RegisterView: View {
             TextField("Type your name...", text: $userManager.profile.name)
                 .bordered()
             Button(action: registerUser, label: {
-                Text("OK")
+                HStack {
+                    Image(systemName: "checkmark")
+                        .resizable()
+                        .frame(width: 16, height: 16, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    Text("OK")
+                        .font(.body)
+                        .bold()
+                }
             })
+            .bordered()
+            
             Spacer()
           }.padding()
           .padding(.bottom, keyboardHandler.keyboardHeight)
